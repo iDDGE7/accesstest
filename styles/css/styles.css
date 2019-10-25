@@ -273,7 +273,8 @@
               font-size: 20px;
               line-height: 22px;
               text-transform: uppercase;
-              color: #FFFFFF; }
+              color: #FFFFFF;
+              text-align: right; }
             .container-persons-cards .container-cards .card-person .container-person-data .content-user-data .item-data-user:not(:last-child) {
               margin-bottom: 10px; }
       .container-persons-cards .container-cards .card-person .container-numer-gate {
