@@ -1,0 +1,19 @@
+@import 'components/header';
+@import 'components/cardsPerson';
+@import 'components/footer';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Agency FB;
+    user-select: none;
+}
+
+body {
+    background: url(../../texture.png), rgba(16, 46, 138, 0.801);
+    padding-bottom:100px;
+}
+
+.wrapper-full{
+    width: 100%;
+}

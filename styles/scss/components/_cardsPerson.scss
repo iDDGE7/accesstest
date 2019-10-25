@@ -1,0 +1,128 @@
+.container-persons-cards {
+    width: 100%;
+    position: relative;
+    top: 180px;
+    // min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-cards {
+        width: 100%;
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(297px, 2fr));
+        grid-auto-rows: 650px;
+        grid-gap: 4vw;
+
+        .card-person {
+            height: 650px;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .container-person-data {
+                width: 100%;
+                height: 88%;
+                background: url(../../../texture.png), #13283C;
+                .content-user-image {
+                    position: relative;
+                    width: 100%;
+                    height: 55%;
+                    // background-color: rgba(255, 255, 255, 0.205);
+
+                    .content-img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+
+                        .user-img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .item-data-user {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        height: 20%;
+                        padding: 0 10% 0 10%;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #13283B 100%);
+
+                        .data-value {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            display: flex;
+                            align-items: center;
+                            color: rgb(255, 255, 255);
+
+                            text-shadow:
+                                1px 1px 0 #000,
+                                -1px -1px 0 #000,
+                                1px -1px 0 #000,
+                                -1px 1px 0 #000,
+                                1px 1px 0 #000;
+
+                            &:not(:last-child) {
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .content-user-data {
+                    width: 100%;
+                    height: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .item-data-user {
+                        width: 80%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .data-value {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 22px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            .container-numer-gate {
+                width: 100%;
+                height: 10%;
+                background: url(../../../texture.png), #13283C;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}
