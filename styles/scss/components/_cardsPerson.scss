@@ -8,12 +8,22 @@
     align-items: center;
 
     .container-cards {
+        // background-color: #fff;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 5%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(297px, 2fr));
         grid-auto-rows: 650px;
-        grid-gap: 4vw;
+        grid-gap: 1vw;
+        grid-row-gap: 50px;
+
+        @media screen and (max-width: 380px){
+            &{
+                padding: 0 7%;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+                grid-auto-rows: 650px;
+            }
+        }
 
         .card-person {
             height: 650px;
@@ -27,6 +37,7 @@
                 width: 100%;
                 height: 88%;
                 background: url(../../../texture.png), #13283C;
+
                 .content-user-image {
                     position: relative;
                     width: 100%;
@@ -93,9 +104,23 @@
                             font-weight: bold;
                             font-size: 20px;
                             line-height: 22px;
-                            text-transform: uppercase;
                             color: #FFFFFF;
-                            text-align: right;
+
+                            &:first-child {
+                                text-align: left;
+                            }
+
+                            &:not(:first-child) {
+                                text-align: right;
+                            }
+
+                            @media screen and (max-width: 380px){
+                                &{
+                                    line-height: initial; 
+                                    font-size: 17px;
+                                }
+                            }
+
                         }
 
                         &:not(:last-child) {
@@ -119,7 +144,6 @@
                 display: flex;
                 align-items: center;
                 text-align: center;
-                text-transform: uppercase;
 
                 color: #FFFFFF;
 

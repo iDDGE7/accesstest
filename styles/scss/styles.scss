@@ -1,11 +1,23 @@
 @import 'components/header';
 @import 'components/cardsPerson';
 @import 'components/footer';
+
+@font-face {
+    font-family: 'Agency FB';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Agency FB'), local('AgencyFB-Regular'),
+        url(./../../fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),
+        url(./../../fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype');
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Agency FB;
+    font-family: 'Agency FB', arial;
+    text-transform: uppercase;
     user-select: none;
 }
 
